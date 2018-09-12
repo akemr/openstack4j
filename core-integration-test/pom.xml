@@ -105,9 +105,9 @@
 				<configuration>
 					<useFile>false</useFile>
 					<!-- include *.java instead of *.groovy to run groovy tests -->
-					<includes>
-						<include>**/*Spec.java</include>
-					</includes>
+					<!--<includes>-->
+						<!--<include>**/*Spec.java</include>-->
+					<!--</includes>-->
 				</configuration>
 			</plugin>
 			<!-- this is required in order to share the tests in src/test/groovy with 

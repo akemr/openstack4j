@@ -51,7 +51,7 @@ public class OSBadBooleanDeserializer extends JsonDeserializer<Boolean> {
              return Boolean.FALSE;
          }
          if (text.length() == 0) {
-             return getEmptyValue();
+             return null;
          }
          throw ctxt.weirdStringException(text, Boolean.class, "only \"true\" or \"false\" recognized");
      }

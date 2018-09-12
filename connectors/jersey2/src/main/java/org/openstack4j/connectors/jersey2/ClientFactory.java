@@ -67,11 +67,12 @@ class ClientFactory {
         }
 
         ClientBuilder cb = ClientBuilder.newBuilder()
-                            .withConfig(clientConfig)
-                            .property(ClientProperties.SUPPRESS_HTTP_COMPLIANCE_VALIDATION, "true")
-                            .register(JacksonFeature.class)
-                            .register(RESOLVER)
-                            .register(new RequestFilter());
+                .withConfig(clientConfig)
+                .property(ClientProperties.SUPPRESS_HTTP_COMPLIANCE_VALIDATION, "true")
+                .register(JacksonFeature.class)
+                .register(RESOLVER)
+                .register(ImageUpdateMessageBodyWriter.class)
+                .register(new RequestFilter());
 
         if (config.getSslContext() != null)
             cb.sslContext(config.getSslContext());

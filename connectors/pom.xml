@@ -58,7 +58,7 @@
 				<version>2.18.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>../../core-test/src/main/resources/all.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>../../core-test/src/main/resources/all.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
